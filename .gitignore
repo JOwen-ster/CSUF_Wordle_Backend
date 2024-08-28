@@ -1,0 +1,5 @@
+output/
+main
+.ccls-cache
+.breakpoints
+/wordle_backend

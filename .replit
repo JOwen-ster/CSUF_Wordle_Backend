@@ -1,0 +1,19 @@
+run = "./run"
+
+hidden = [
+	"main", "wordle_backend", "server_utils",
+	"**/*.o", "**/*.d", ".ccls-cache",
+  ".clang-format", ".clang-tidy", ".gitignore",
+	"Makefile", "compile_flags.txt"
+]
+
+[languages.cpp]
+pattern = "**/*.{cc,h}"
+[languages.cpp.languageServer]
+start = "clangd"
+
+[debugger]
+support = true
+
+[nix]
+channel = "stable-22_05"
